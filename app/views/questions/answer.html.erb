@@ -9,13 +9,13 @@
 
 <div class="container">
   <p><%= @question %></p>
-  <em>-You</em>
-  <span class="time-right"><%= Time.now %></span>
+  <p><em class="author">-You</em>
+  <span class="time-right"><%= Time.now %></span></p>
 </div>
 <div class="container darker">
   <p><%= @answer %></p>
-  <em>-Coach</em>
-  <span class="time-right"><%= Time.now %></span>
+  <p><em class="author">-Coach</em>
+  <span class="time-right"><%= Time.now %></span></p>
 </div>
 <div>
   <button type="button" class="btn btn-link"><%= link_to "Ask a new question", "/ask" %></button>
